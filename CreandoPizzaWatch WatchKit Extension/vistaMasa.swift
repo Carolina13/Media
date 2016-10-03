@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  CreandoPizzaWatch WatchKit Extension
+//  vistaMasa.swift
+//  CreandoPizzaWatch
 //
 //  Created by Carolina Arnez on 9/29/16.
 //  Copyright © 2016 Carolina Arnez. All rights reserved.
@@ -10,47 +10,42 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class vistaMasa: WKInterfaceController {
 
-    @IBOutlet var elijaTamano: WKInterfaceLabel!
-    var tamano = configuracionPizza(t: "", m: "", q: "", i: "")
+    @IBOutlet var elijaMasa: WKInterfaceLabel!
+    var masa = configuracionPizza(t: "", m: "", q: "", i: "")
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        
+        let c=context as! configuracionPizza
+        masa.tamanoPizza = c.tamanoPizza
         
         // Configure interface objects here.
     }
-    @IBAction func siguientePaso() {
-        pushController(withName: "vistaMasa", context: tamano)
+    @IBAction func siguientePaso2() {
+        pushController(withName: "vistaQueso", context: masa)
     }
-    @IBAction func Tamano(_ value: Float) {
-        if value == 0 {
-            elijaTamano.setText("")
+
+    @IBAction func tipoMasa(_ value: Float) {
+        if value == 0{
+            elijaMasa.setText("")
         }
         if value == 1 {
-                tamano.tamanoPizza = "Chica"
+            masa.masaPizza = "Delgada"
         }
         if value == 2 {
-            tamano.tamanoPizza = "Mediana"
+            masa.masaPizza = "Crujiente"
         }
         if value == 3 {
-            tamano.tamanoPizza = "Grande"
+            masa.masaPizza = "Gruesa"
         }
-        elijaTamano.setText(tamano.tamanoPizza)
-        
-                
-                
-            
-        
+        elijaMasa.setText(masa.masaPizza)
     }
-    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
-    
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()

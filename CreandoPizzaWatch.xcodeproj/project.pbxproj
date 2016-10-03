@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A26A9AC61D9F1CE70015BCF4 /* vistaQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A9AC51D9F1CE70015BCF4 /* vistaQueso.swift */; };
+		A26A9AC81D9F1F5C0015BCF4 /* vistaIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26A9AC71D9F1F5C0015BCF4 /* vistaIngredientes.swift */; };
+		A29195681DA17E2C00CBE917 /* vistaConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29195671DA17E2C00CBE917 /* vistaConfirmacion.swift */; };
 		A2B679111D9DBF0A00F085E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B679101D9DBF0A00F085E5 /* AppDelegate.swift */; };
 		A2B679131D9DBF0A00F085E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B679121D9DBF0A00F085E5 /* ViewController.swift */; };
 		A2B679161D9DBF0A00F085E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B679141D9DBF0A00F085E5 /* Main.storyboard */; };
@@ -22,6 +25,8 @@
 		A2B6794E1D9DBF0B00F085E5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B6794D1D9DBF0B00F085E5 /* ExtensionDelegate.swift */; };
 		A2B679501D9DBF0B00F085E5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B6794F1D9DBF0B00F085E5 /* NotificationController.swift */; };
 		A2B679521D9DBF0B00F085E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B679511D9DBF0B00F085E5 /* Assets.xcassets */; };
+		A2B679681D9DC33300F085E5 /* configuracionPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B679671D9DC33300F085E5 /* configuracionPizza.swift */; };
+		A2B6796C1D9DCE1200F085E5 /* vistaMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B6796B1D9DCE1200F085E5 /* vistaMasa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A26A9AC51D9F1CE70015BCF4 /* vistaQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaQueso.swift; sourceTree = "<group>"; };
+		A26A9AC71D9F1F5C0015BCF4 /* vistaIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaIngredientes.swift; sourceTree = "<group>"; };
+		A29195671DA17E2C00CBE917 /* vistaConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaConfirmacion.swift; sourceTree = "<group>"; };
 		A2B6790D1D9DBF0A00F085E5 /* CreandoPizzaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreandoPizzaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B679101D9DBF0A00F085E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2B679121D9DBF0A00F085E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,8 @@
 		A2B6794F1D9DBF0B00F085E5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A2B679511D9DBF0B00F085E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B679531D9DBF0B00F085E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B679671D9DC33300F085E5 /* configuracionPizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configuracionPizza.swift; sourceTree = "<group>"; };
+		A2B6796B1D9DCE1200F085E5 /* vistaMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaMasa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +223,11 @@
 				A2B679511D9DBF0B00F085E5 /* Assets.xcassets */,
 				A2B679531D9DBF0B00F085E5 /* Info.plist */,
 				A2B679491D9DBF0B00F085E5 /* Supporting Files */,
+				A2B6796B1D9DCE1200F085E5 /* vistaMasa.swift */,
+				A26A9AC51D9F1CE70015BCF4 /* vistaQueso.swift */,
+				A26A9AC71D9F1F5C0015BCF4 /* vistaIngredientes.swift */,
+				A2B679671D9DC33300F085E5 /* configuracionPizza.swift */,
+				A29195671DA17E2C00CBE917 /* vistaConfirmacion.swift */,
 			);
 			path = "CreandoPizzaWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -447,9 +462,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B679681D9DC33300F085E5 /* configuracionPizza.swift in Sources */,
+				A29195681DA17E2C00CBE917 /* vistaConfirmacion.swift in Sources */,
 				A2B679501D9DBF0B00F085E5 /* NotificationController.swift in Sources */,
 				A2B6794E1D9DBF0B00F085E5 /* ExtensionDelegate.swift in Sources */,
+				A26A9AC61D9F1CE70015BCF4 /* vistaQueso.swift in Sources */,
+				A2B6796C1D9DCE1200F085E5 /* vistaMasa.swift in Sources */,
 				A2B6794C1D9DBF0B00F085E5 /* InterfaceController.swift in Sources */,
+				A26A9AC81D9F1F5C0015BCF4 /* vistaIngredientes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +782,7 @@
 				A2B679581D9DBF0B00F085E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2B6795A1D9DBF0B00F085E5 /* Build configuration list for PBXNativeTarget "CreandoPizzaWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +791,7 @@
 				A2B6795C1D9DBF0B00F085E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2B6795E1D9DBF0B00F085E5 /* Build configuration list for PBXNativeTarget "CreandoPizzaWatch" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +800,7 @@
 				A2B679601D9DBF0B00F085E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2B679611D9DBF0B00F085E5 /* Build configuration list for PBXNativeTarget "CreandoPizzaWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -786,6 +809,7 @@
 				A2B679631D9DBF0B00F085E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2B679641D9DBF0B00F085E5 /* Build configuration list for PBXNativeTarget "CreandoPizzaWatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -794,6 +818,7 @@
 				A2B679661D9DBF0B00F085E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
